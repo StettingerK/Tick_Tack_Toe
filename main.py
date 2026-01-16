@@ -56,10 +56,9 @@ def unentschieden_ermitteln(spielfeld:dict[list[str]]) -> bool:
 def main():
     player = ["Kevin","Oli"]#gui.eingabe_spieler()
     #player_eingabe = {player[0]:[],player[1]:[]}
-    playing = True
     player_counter = random.randint(0,1) #zufällig wer anfangen darf
     spielfeld = {"a":[" "," "," "],"b":[" "," "," "],"c":[" "," "," "]}
-    while playing:
+    while True:
         gui.ausgabe(f'Spieler "{player[player_counter]}" ist an der Reihe')
         gui.print_spiel(spielfeld)
         while True: #solange bis Spieler richtige eingabe gemacht hat
